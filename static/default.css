@@ -220,29 +220,14 @@ h6{font-size: 16px;}
 
 #profile-pic{
     display: block;
-    position: relative;
-    margin:0 auto ;
-    z-index: 1111;  
+    margin:0 auto;
     height: 15.625rem;
     width: 15.625rem;
     border-radius: 50%;
     object-fit: cover;
-    overflow: hidden;
     border: 2px solid var(--border-color);
     box-shadow: 0.0625rem 0.0625rem 1.125rem 0.125rem var(--shadow-colour);
 
-}
-.profile-bg {
-    position: absolute;
-    height: 15.850rem;
-    width: 15.850rem;
-    top: 277px;
-    left: 345px;
-    border-radius: 50%;
-    z-index: 2;
-    background: var(--secondbackground);
-    backdrop-filter: blur(24px);
-    overflow: hidden;
 }
 #theme{
     display: flex;
