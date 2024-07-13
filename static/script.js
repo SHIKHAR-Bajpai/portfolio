@@ -3,13 +3,13 @@ function setTheme(mode){
         document.getElementById('colour-theme').href='default.css'
     }
     if(mode == 'white'){
-        document.getElementById('colour-theme').href='images/white.css'
+        document.getElementById('colour-theme').href='static/white.css'
     }
     if(mode == 'green'){
-        document.getElementById('colour-theme').href='images/green.css'
+        document.getElementById('colour-theme').href='static/green.css'
     }
     if(mode == 'dark'){
-        document.getElementById('colour-theme').href='images/dark.css'
+        document.getElementById('colour-theme').href='static/dark.css'
     }  
     
     localStorage.setItem('theme', mode)
