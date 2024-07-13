@@ -1,0 +1,42 @@
+:root {
+    --Maintext:white;
+    --secondtext:#eeeeee;
+    --link: black;
+    --mainbackground:#606B56;    /* #eaeaea */
+    --secondbackground:#515a48;
+    /* --border-color:#161914; */
+    --border-color:#28321b;
+    --themeDotBorder:#28321b;
+
+    --shadow-colour: #2a2f25;
+
+}
+h1,h2,h3,h4,h5,h6, strong{
+    color: var(--Maintext);
+    font-family: 'Roboto Slab', serif; 
+}
+
+p,li,span,label,input,textarea{
+    color: var(--secondtext);
+    font-family:'Roboto Mono', monospace;
+}
+::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--secondbackground); 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--shadow-colour); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--border-color); 
+  }
+
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 90%;
+    }
+}
