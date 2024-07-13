@@ -123,9 +123,9 @@ h6{font-size: 16px;}
     border: 1px solid var(--themeDotBorder) ;
     margin: 0.25rem;
 
-    -webkit-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout); /* -1px 1px 3px -1px to rem */
-    -moz-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout);
-    box-shadow: -0.0625rem 0.0625rem 0.1875rem 0 var(--shadow-colout);
+    -webkit-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colour); /* -1px 1px 3px -1px to rem */
+    -moz-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colour);
+    box-shadow: -0.0625rem 0.0625rem 0.1875rem 0 var(--shadow-colour);
 
 
 }
@@ -153,9 +153,9 @@ h6{font-size: 16px;}
     border-radius: 0px 0px 10px 10px;
     background-color: var(--secondbackground);
     border: 1px solid var(--border-color);
-    -webkit-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout); /* -1px 1px 3px -1px to rem */
-    -moz-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout);
-    box-shadow: -0.0625rem 0.0625rem 0.1875rem 0 var(--shadow-colout);
+    -webkit-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colour); /* -1px 1px 3px -1px to rem */
+    -moz-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colour);
+    box-shadow: -0.0625rem 0.0625rem 0.1875rem 0 var(--shadow-colour);
     margin-bottom: 5rem;
     display: grid;
     flex-wrap: wrap;
@@ -223,7 +223,7 @@ h6{font-size: 16px;}
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--border-color);
-    box-shadow: 0.0625rem 0.0625rem 0.125rem 0.125rem var(--shadow-colout);
+    box-shadow: 0.0625rem 0.0625rem 0.125rem 0.125rem var(--shadow-colour);
 }
 
 #theme{
@@ -237,9 +237,9 @@ h6{font-size: 16px;}
     background-color: black;
     border: 2px solid var(--themeDotBorder);
     margin: 6px;
-    -webkit-box-shadow: -1px 1px 3px -1px var(--shadow-colout);
-    -moz-box-shadow: -1px 1px 3px -1px var(--shadow-colout);
-    box-shadow: -1px 1px 3px 1px var(--shadow-colout);
+    -webkit-box-shadow: -1px 1px 3px -1px var(--shadow-colour);
+    -moz-box-shadow: -1px 1px 3px -1px var(--shadow-colour);
+    box-shadow: -1px 1px 3px 1px var(--shadow-colour);
     cursor: pointer;
     
 }
