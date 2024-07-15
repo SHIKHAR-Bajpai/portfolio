@@ -1,12 +1,12 @@
 :root {
-        --Maintext:white;
-        --secondtext:#eeeeee;
-        --link: black;
-        --mainbackground:#15202B;/* #eaeaea */
-        --secondbackground:#192734;
-        --border-color:#164D56;
-        --themeDotBorder:#164D56; /*black*/
-        --shadow-colour: #164D56;
+    --Maintext:black;
+    --secondtext: black;
+    --link: black;
+    --mainbackground:#eaeaea;    /* #eaeaea */
+    --secondbackground:white;
+    --border-color:rgb(10, 10, 10);
+    --themeDotBorder:#c1c1c1;
+    --shadow-colour: rgba(0,0,0,0.75);
 }
 body *{
     transition: 0.4s;
