@@ -1,9 +1,9 @@
 function setTheme(mode){
     if(mode == 'blue'){
-        document.getElementById('colour-theme').href='default.css'
+        document.getElementById('colour-theme').href='static/blue.css'
     }
     if(mode == 'white'){
-        document.getElementById('colour-theme').href='static/white.css'
+        document.getElementById('colour-theme').href='default.css'
     }
     if(mode == 'green'){
         document.getElementById('colour-theme').href='static/green.css'
