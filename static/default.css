@@ -1,12 +1,12 @@
 :root {
-        --Maintext:white;
-        --secondtext:#eeeeee;
-        --link: black;
-        --mainbackground:#15202B;/* #eaeaea */
-        --secondbackground:#192734;
-        --border-color:#164D56;
-        --themeDotBorder:#164D56; /*black*/
-        --shadow-colour: #164D56;
+    --Maintext:black;
+    --secondtext: black;
+    --link: black;
+    --mainbackground:#eaeaea;    /* #eaeaea */
+    --secondbackground:white;
+    --border-color:rgb(10, 10, 10);
+    --themeDotBorder:#c1c1c1;
+    --shadow-colour: rgba(0,0,0,0.75);
 }
 body *{
     transition: 0.4s;
@@ -19,7 +19,8 @@ html, body{
 
 h1,h2,h3,h4,h5,h6,strong{
     color: var(--Maintext);
-    font-family: 'Roboto Slab', serif; 
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px; 
 }
 
 p,li,span,label,input,textarea{
@@ -55,6 +56,7 @@ h6{font-size: 16px;}
 .main-container{
     width: 76vw;
     margin: 0 auto;
+    scroll-snap-type: y mandatory;
 }
 
 .greeting{
@@ -79,11 +81,11 @@ h6{font-size: 16px;}
         animation: 
           typing 3.5s steps(40, end) infinite alternate,
           blink-caret .75s step-end infinite normal;
-      }
+    }
 
-      #hii-symbol{
+    #hii-symbol{
         display: inline;
-      }
+    }
       
     /*typing effect  */
     @keyframes typing {
@@ -91,12 +93,11 @@ h6{font-size: 16px;}
         to { width: 100%; }
       }
       
-      /*typewriter cursor effect */
-      @keyframes blink-caret {
+    /*typewriter cursor effect */
+     @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: var(--Maintext); }
-      }
-    
+    }    
 }
 
 .nav-wrapper{
@@ -109,8 +110,10 @@ h6{font-size: 16px;}
     align-items: center;
     justify-content: center;
     padding: 0.2rem;
+    -webkit-box-shadow: 0.0625rem 0.0625rem 0.1875rem 0.0625rem var(--shadow-colour); 
+    -moz-box-shadow: 0.0625rem 0.0625rem 0.1875rem 0.0625rem var(--shadow-colour);
+    box-shadow: 0.09325rem 0.0925rem 0.575rem var(--shadow-colour);
 }
-
 .dots-wrapper{
     display: flex;
     padding: 0.8rem;
@@ -122,12 +125,6 @@ h6{font-size: 16px;}
     border-radius: 50%;
     border: 1px solid var(--themeDotBorder) ;
     margin: 0.25rem;
-
-    -webkit-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout); /* -1px 1px 3px -1px to rem */
-    -moz-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout);
-    box-shadow: -0.0625rem 0.0625rem 0.1875rem 0 var(--shadow-colout);
-
-
 }
 #dot1{background-color: #FC6058;}
 #dot2{background-color: yellow;}
@@ -148,15 +145,14 @@ h6{font-size: 16px;}
     display: inline-block;
     margin: 0rem 0.5rem;
 }
+.navigation-link li:hover{
+    scale: 1.2;
+}
 
 .intro{
     border-radius: 0px 0px 10px 10px;
     background-color: var(--secondbackground);
     border: 1px solid var(--border-color);
-    -webkit-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout); /* -1px 1px 3px -1px to rem */
-    -moz-box-shadow: -0.0625rem 0.0625rem 0.1875rem -0.0625rem var(--shadow-colout);
-    box-shadow: -0.0625rem 0.0625rem 0.1875rem 0 var(--shadow-colout);
-    margin-bottom: 5rem;
     display: grid;
     flex-wrap: wrap;
     flex-direction: row;
@@ -165,30 +161,54 @@ h6{font-size: 16px;}
     grid-template-columns: 1fr  1fr;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
+    -webkit-box-shadow: 0.0625rem 0.0625rem 0.1875rem 0.0625rem var(--shadow-colour); 
+    -moz-box-shadow: 0.0625rem 0.0625rem 0.1875rem 0.0625rem var(--shadow-colour);
+    box-shadow: .09325rem 0.0925rem 0.575rem var(--shadow-colour);
 }
 
 @media (max-width:900px){
     .intro{
         margin-bottom: 5rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 0rem;
-        align-items: center;
-        justify-content: center;
+        display: block;
     }
-}  
+    .right-column{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .personal-box{
+        margin: 2rem 2rem 2rem 2rem;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        -o-transform: none !important;
+        -ms-transform: none !important;
+        transform: none;
+    }  
+}
+
+@media(min-width: 900px){
+    .left-column{
+        padding-bottom: 50px;
+    }
+    .personal-box{
+        margin: 1rem 5rem 2rem 2rem;
+    }
+}
 
 .left-column{
     grid-area: left-column;    
     padding-top: 50px;
-    padding-bottom: 50px; 
     display: flex;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
 }
 .right-column{
     grid-area: right-column;
@@ -196,34 +216,47 @@ h6{font-size: 16px;}
     justify-content: center;
     align-items: center;
 }
-
 .personal-box{
-    border: 1px solid var(--border-color);
-    -webkit-box-shadow: 0.625rem 0.625rem 0.3125rem 0px rgba(0, 0, 0, 0.75); /* 10px to rem */
-    -moz-box-shadow: 0.625rem 0.625rem 0.3125rem 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0.625rem 0.625rem 0.3125rem 0px rgba(0, 0, 0, 0.75);
     text-align: center;
-    margin: 1rem 4rem 2rem 4rem;
     overflow: auto;
-    
+    border: 1px solid var(--border-color);
+    -webkit-box-shadow: 0.625rem 0.625rem 0.3125rem 0px rgba(0, 0, 0, 0.75); 
+    -moz-box-shadow: 0.625rem 0.625rem 0.3125rem 0px rgba(0, 0, 0, 0.75); 
+    box-shadow: 0.625rem 0.625rem 0.3125rem 0px rgba(0, 0, 0, 0.75);     
+    --factor: -0.1; 
+    --_angle: calc(.3*90deg*var(--factor));
+    transform: perspective(400px) translateX(0px) rotateY(var(--_angle));
+    transition: 1.2s;
+}
+.personal-box:hover {
+    transform: perspective(400px) translate3d(10px , 10px , 10px) rotateY(calc(-.4*var(--_angle)));
 }
 .personal-intro{
     padding: 0.2rem 1.6rem;
 }
-
 .music{
     border-radius: 10%;
 }
-
 #profile-pic{
     display: block;
+    position: relative;
     margin:0 auto ;
+    z-index: 1111;  
     height: 15.625rem;
     width: 15.625rem;
     border-radius: 50%;
     object-fit: cover;
+    overflow: hidden;
     border: 2px solid var(--border-color);
-    box-shadow: 0.0625rem 0.0625rem 0.125rem 0.125rem var(--shadow-colout);
+    box-shadow: 0.0625rem 0.0625rem 1.125rem 0.125rem var(--shadow-colour);
+}
+.card {
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.card:hover .card-content {
+    transform: translateZ(12px);
 }
 
 #theme{
@@ -237,13 +270,11 @@ h6{font-size: 16px;}
     background-color: black;
     border: 2px solid var(--themeDotBorder);
     margin: 6px;
-    -webkit-box-shadow: -1px 1px 3px -1px var(--shadow-colout);
-    -moz-box-shadow: -1px 1px 3px -1px var(--shadow-colout);
-    box-shadow: -1px 1px 3px 1px var(--shadow-colout);
-    cursor: pointer;
-    
+    -webkit-box-shadow: -1px 1px 3px -1px var(--shadow-colour);
+    -moz-box-shadow: -1px 1px 3px -1px var(--shadow-colour);
+    box-shadow: 0.5px 0.5px 2px 0.5px var(--shadow-colour);
+    cursor: pointer; 
 }
-
 .theme-dot:hover{
     border-width: 5px;
 }
@@ -278,11 +309,115 @@ h6{font-size: 16px;}
 
 /* Project CSS */
 .project-main{
-    margin-bottom: 60px;
+    margin-bottom: 4rem;
 }
-.project-heading{
-    padding-top: 20px;
-    margin-bottom: 20px;
+.project-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-first{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+.project-second{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+.project-third{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+.project-card {
+    width: 16rem;
+    height: 20rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 1800ms;
+    transform-style: preserve-3d;
+    border: 1.6px solid var(--border-color);
+}
+.fa-solid{
+    color: var(--Maintext);
+}
+
+.project-card:hover {
+    cursor: pointer;
+    transform: rotateX(28deg) rotateY(180deg) rotateZ(180deg);
+}
+.front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    box-shadow: 2px 2px 8px 2px var(--shadow-colour);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+.back {
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+.project-card-img {
+    width: 100%;
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 2rem 0 0;
+}
+.project-card-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 2rem 2rem;
+    height: 30%;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--secondbackground);
+}
+.project-card-desc{
+    height: 68%;
+    padding: 0.4rem 0.8rem;
+    text-align: justify;
+    font-size:smaller;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 2rem 2rem 0 0;
+    background-color: var(--secondbackground);
+}
+  
+.project-svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: translateY(25%);
+    fill: var(--Maintext)
+}
+.project-svg:hover{
+    scale: 1.2;
+}
+.project-card-links{
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+@media(max-width:376px){
+    .project-card{
+        width: 11rem;
+        height: 15rem;
+    }
 }
 /* Project CSS Ends */
 
@@ -391,7 +526,6 @@ h6{font-size: 16px;}
     border-radius: 10px;
 }
 
-
 @media (max-width: 767px){
     
 .contact-container{
@@ -417,7 +551,7 @@ h6{font-size: 16px;}
 .contact-box .user-box input {
     width: 80%;
     padding: 10px 0;
-    margin-right: 50px;
+    margin-right: 15%;
     font-size: 14px;
     letter-spacing: 1px;
     color: var(--Maintext);
@@ -432,7 +566,7 @@ h6{font-size: 16px;}
     position: absolute;
     top: 0;
     left: 0px;
-    margin-left: 40px;
+    margin-left: 2.5%;
     padding: 10px 0;
     font-size: 20px;
     letter-spacing: 1.5px;
@@ -523,7 +657,7 @@ h6{font-size: 16px;}
         position: absolute;
         top: 0;
         left: 0px;
-        margin-left: 20px;
+        margin-left: 5.5%;
         padding: 10px 0;
         font-size: 20px;
         letter-spacing: 1.5px;

@@ -1,12 +1,12 @@
 :root {
-    --Maintext:black;
-    --secondtext: black;
-    --link: black;
-    --mainbackground:#eaeaea;    /* #eaeaea */
-    --secondbackground:white;
-    --border-color:#c1c1c1;
-    --themeDotBorder:#c1c1c1;
-    --shadow-colour: rgba(0,0,0,0.75);
+    --Maintext:white;
+        --secondtext:#eeeeee;
+        --link: black;
+        --mainbackground:#15202B;/* #eaeaea */
+        --secondbackground:#192734;
+        --border-color:#164D56;
+        --themeDotBorder:#164D56; /*black*/
+        --shadow-colour: #164D56;
 }
 
 h1,h2,h3,h4,h5,h6, strong{
