@@ -9,6 +9,7 @@ async function fetchRiddle() {
         const answer = data.answer;
         document.getElementById('riddle').innerHTML = riddle;
         document.getElementById('answer').innerHTML = answer;
+        document.getElementById('answer').style.display = 'none'; 
     } catch (error) {
         console.error('Error:', error);
     }
