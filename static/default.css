@@ -300,6 +300,11 @@ h6{font-size: 16px;}
 
 /* Intro CSS End */
 /* quotes and riddle css */
+
+#answer{
+    display:none;
+}
+
 #notes{
     font-size: 11px;
     font-style: italic;
