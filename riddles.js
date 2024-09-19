@@ -10,6 +10,7 @@ async function fetchRiddle() {
         document.getElementById('riddle').innerHTML = riddle;
         document.getElementById('answer').innerHTML = answer;
         document.getElementById('answer').style.display = 'none'; 
+        flag = false;
     } catch (error) {
         console.error('Error:', error);
     }
