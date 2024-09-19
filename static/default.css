@@ -298,14 +298,46 @@ h6{font-size: 16px;}
     padding-bottom: 12px;
 }
 
+/* Intro CSS End */
+/* quotes and riddle css */
 #notes{
     font-size: 11px;
     font-style: italic;
     text-align: right; 
-    padding-top: 6px;
     padding-bottom: 12px;
 }
-/* Intro CSS End */
+
+#answer{
+    display: none;
+}
+
+#answer-button {
+    margin: 20px 0px;
+    margin-left: 50%;
+    padding: 1.2em 2.5em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: var(--secondtext);
+    background-color: var(--mainbackground);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+#answer-button:hover {
+    background-color: var(--secondbackground);
+    box-shadow: 0px 3px 8px var(--shadow-colour);
+    color: var(--secondtext);
+    transform: translateY(-7px);
+  }
+  
+#answer-button:active {
+    transform: translateY(-1px);
+  }
+/* quotes and riddle css ends*/
 
 /* Project CSS */
 .project-main{

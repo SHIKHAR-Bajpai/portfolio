@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Shikhar⚡</title>
+        <title>Shikhar Bajpai⚡</title>
         <meta name="description" content="Embark on a journey of learning and exploration through a dynamic portfolio showcasing my creative endeavors, innovative projects, and passion-driven works. From captivating designs to cutting-edge developments, discover the essence of my expertise and vision through a curated collection of my finest achievements">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +40,7 @@
                             <ul class="navigation-link">
                                 <li><b><a href="#about">About</a></b></li>
                                 <li><b><a href="static/ShikharBajpai.pdf" target="_blank">Resume</a></b></li>
+                                <li><b><a href="#quotes">Riddles</a></b></li>
                                 <li><b><a href="#quotes">Quotes</a></b></li>
                                 <li><b><a href="#projects">Projects</a></b></li>
                                 <!-- <li><a href="#games">Games</a></li> -->
@@ -106,16 +107,23 @@
 
             <!-- Sample section end  -->
 
-            <!-- Quotes section start -->
+            <!-- Quotes and riddle section start -->
             <section class="s2" id="quotes">
                 <div class="main-container">
-                        <script type="text/javascript" src="quotes.js"></script>
+                    <h6>Let's have a riddle</h6>
+                    <i><p id="riddle"></p></i>
+                    <span id="answer"></span>
+                    <button id="answer-button" onclick="showAnswer()">View Answer</button>                    
+                </div>
+                <div class="main-container">
+                        <h6>Elevate Your Mind</h6>
                         <i><p id="quote"></p>
                         <p id="author"></p></i>
-                        <p id="notes">*Reload the page for more quotes!! </p>
+
+                        <p id="notes">*Reload the page for more such stuff!! </p>
                 </div>
             </section>
-            <!-- Quotes section end -->
+            <!-- Quotes and riddle section end -->
             
             <!-- Projects Section -->
             <section class="s1" >
@@ -280,11 +288,7 @@
                                     
                                     </form>
 
-                                </div>
-
-
-
-                                  
+                                </div>                                
 
                         </div>
 
@@ -328,7 +332,8 @@
                     </div>
                 </section>
             </footer>
-
+            
+            <script type="text/javascript" src="riddles.js"></script>
             <script type="text/javascript" src="quotes.js"></script>
             <script type="text/javascript" src="static/script.js"></script>
 

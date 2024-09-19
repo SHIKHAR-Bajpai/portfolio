@@ -79,8 +79,6 @@ function updateDateTime() {
     const date = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     
-    
-    
     const dayOfWeek = days[date.getDay()];
     const options = {
         year: 'numeric',
