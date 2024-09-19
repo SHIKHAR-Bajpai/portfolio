@@ -306,11 +306,6 @@ h6{font-size: 16px;}
     text-align: right; 
     padding-bottom: 12px;
 }
-
-#answer{
-    display: none;
-}
-
 #answer-button {
     margin: 20px 0px;
     margin-left: 50%;
